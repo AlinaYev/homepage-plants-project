@@ -15,11 +15,7 @@
             top: -70px;
             margin-bottom: 45px;
             .big-text {
-                font-family: 'Nunito';
-                font-style: normal;
-                font-weight: 700;
-                font-size: 45px;
-                line-height: 61px;
+                font: normal 700 45px/61px 'Nunito';
                 color: #212529;
                 span {
                     color: #00730C;
@@ -32,35 +28,29 @@
                 width: 175px;
                 height: 50px;
                 color: white;
-                font-family: 'Nunito';
-                font-style: normal;
-                font-weight: 700;
-                font-size: 18px;
-                line-height: 24px;
+                font: normal 700 18px/24px 'Nunito';
                 text-transform: capitalize;
                 cursor: pointer;
+                &:hover {
+                    background-color: white;
+                    color: #00730C;
+                    border: 1px #00730C solid;
+                }
             }
         }
         .contacts-and-other {
             display: flex;
+            gap: 95px;
             .cont-subscribe-to-newsletter {
                 width: 498px;
-                margin-right: 96px;
+                // margin-right: 96px;
                 .header-subscribe-to-newsletter {
-                    font-family: 'Nunito';
-                    font-style: normal;
-                    font-weight: 700;
-                    font-size: 24px;
-                    line-height: 33px;
+                    font: normal 700 22px/33px 'Nunito';
                     color: #FFFFFF;
                     margin-bottom: 80px;
                 }
                 .small-text {
-                    font-family: 'Nunito';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 18px;
-                    line-height: 30px;
+                    font: normal 400 18px/30px 'Nunito';
                     color: #FFFFFF;
                     margin-bottom: 44px;
                 }
@@ -69,73 +59,67 @@
                     justify-content: space-between;
                     align-items: center;
                     border-bottom: 1px white solid;
+                    margin-bottom: 40px;
                     .input-email {
-                        font-family: 'Nunito';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 14px;
-                        line-height: 25px;
+                        font: normal 400 14px/25px 'Nunito';
                         color: #FFFFFF;
                         background-color: transparent;
                         border: none;
+                        outline: none;
                         &::placeholder {
                             color: white
                         }
                     }
                     .subscribe {
-                        font-family: 'Nunito';
-                        font-style: normal;
-                        font-weight: 700;
-                        font-size: 24px;
-                        line-height: 33px;
+                        font: normal 700 22px/33px 'Nunito';
                         color: #FFFFFF;
                         background-color: transparent;
                         border: none;
+                        cursor: pointer;
+                    }
+                }
+                .socials {
+                    display: flex;
+                    gap: 30px;
+                    margin-bottom: 40px;
+                    .soc {
+                        border: 1px white solid;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 40px;
+                        height: 40px;
+                        cursor: pointer;
                     }
                 }
             }
             .cont-contacts {
                 width: 208px;
-                margin-right: 96px;
+                // margin-right: 96px;
                 .header-contacts {
-                    font-family: 'Nunito';
-                    font-style: normal;
-                    font-weight: 700;
-                    font-size: 24px;
-                    line-height: 33px;
+                    font: normal 700 22px/33px 'Nunito';
                     color: #FFFFFF;
                     margin-bottom: 80px;
                 }
                 .small-text {
-                    font-family: 'Nunito';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 18px;
-                    line-height: 30px;
+                    font: normal 400 18px/30px'Nunito';
                     color: #FFFFFF;
                     margin-bottom: 20px
                 }
                 .phone-numbers {
                     margin-bottom: 20px;
                     p {
-                        font-family: 'Nunito';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 18px;
-                        line-height: 30px;
+                        font: normal 400 18px/30px 'Nunito';
                         color: #FFFFFF;
                     }
                 }
             }
             .cont-useful-links {
                 width: 239px;
-                margin-right: 96px;
+                // margin-right: 96px;
                 .header-useful-links {
-                    font-family: 'Nunito';
-                    font-style: normal;
-                    font-weight: 700;
-                    font-size: 24px;
-                    line-height: 33px;
+                    font: normal 700 22px/33px 'Nunito';
                     color: #FFFFFF;
                     margin-bottom: 80px;
                 }
@@ -147,11 +131,7 @@
                     gap: 20px;
                     height: 180px;
                     .link-and-arrow {
-                        font-family: 'Nunito';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 18px;
-                        line-height: 30px;
+                        font: normal 400 18px/30px 'Nunito';
                         color: #FFFFFF;
                         img {
                             margin-right: 5px;
@@ -162,39 +142,18 @@
             .cont-popular-services {
                 width: 177px;
                 .header-popular-services {
-                    font-family: 'Nunito';
-                    font-style: normal;
-                    font-weight: 700;
-                    font-size: 24px;
-                    line-height: 33px;
+                    font: normal 700 22px/33px 'Nunito';
                     color: #FFFFFF;
                     margin-bottom: 80px;
                 }
                 .small-text {
-                    font-family: 'Poppins';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 16px;
-                    line-height: 28px;
+                    font: normal 400 16px/28px 'Poppins';
                     color: #FFFFFF;
                     margin-bottom: 20px;
                 }
             }
         }
-        .socials {
-            display: flex;
-            gap: 30px;
-            margin-bottom: 40px;
-            .soc {
-                border: 1px white solid;
-                border-radius: 50%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 40px;
-                height: 40px;
-            }
-        }
+        
     }
     .line {
         border-bottom: 1px white solid;
@@ -206,22 +165,14 @@
         align-items: center;
         justify-content: space-between;
         .all-right-reserved {
-            font-family: 'Nunito';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 30px;
+            font: normal 400 18px/30px 'Nunito';
             color: #FFFFFF;
         }
         .priv-pol-sitemap {
             display: flex;
             gap: 30px;
             .small-text {
-                font-family: 'Poppins';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 28px;
+                font: normal 400 16px/28px 'Poppins';
                 color: #FFFFFF;  
             }
         }
